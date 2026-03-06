@@ -3,6 +3,7 @@ from google.colab.patches import cv2_imshow
 
 def draw_boxes(image_path, boxes):
     img = cv2.imread(image_path)
+    
     for box in boxes:
         x1, y1, x2, y2 = box
         cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
