@@ -4,7 +4,6 @@ def detect_cars(image_path, model_path="yolov8n.pt"):
     model = YOLO(model_path)
     results = model(image_path)
     car_boxes = []
-    
     for result in results:
         boxes = result.boxes
         for box in boxes:
