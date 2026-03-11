@@ -1,6 +1,5 @@
 import cv2
 from google.colab.patches import cv2_imshow
-
 def draw_boxes(image_path, boxes):
     img = cv2.imread(image_path)
     for box in boxes:
