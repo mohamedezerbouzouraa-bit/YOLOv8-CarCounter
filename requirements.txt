@@ -2,4 +2,3 @@ ultralytics
 opencv-python
 pillow
 numpy
-
